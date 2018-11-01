@@ -19,9 +19,7 @@ RUN mkdir -p /home/iysql && cd /home/iysql && \
 
 RUN apt-get install -y netbase
 
-RUN ls /home/iysql/iysql-0.1/iysql/
-
-CMD ["bash"]
+CMD python3 /home/iysql/iysql-0.1/iysql/app.py
 
 EXPOSE 5000
     
